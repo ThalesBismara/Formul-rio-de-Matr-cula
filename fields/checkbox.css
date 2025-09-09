@@ -1,0 +1,37 @@
+.terms-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+
+  & strong {
+   font-weight: 500;
+   color: var(--text-hightlight);
+  }
+}
+
+.checkbox-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  
+}
+
+/* Remove o checkbox padrão */
+.checkbox-wrapper input[type="checkbox"] {
+  all: unset;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../../assets/icons/checkbox-default.svg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Hover ou foco quando o checkbox estiver marcado */
+.checkbox-wrapper input[type="checkbox"]:checked:hover,
+.checkbox-wrapper input[type="checkbox"]:checked:focus-within {
+  background-image: url("../../assets/icons/checkbox-checked.svg");
+}
+
+
